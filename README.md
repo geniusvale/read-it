@@ -1,6 +1,6 @@
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
-## Tentang Projek Ini
+# Tentang Projek Ini
 Projek ini pada awalnya dibuat sebagai tugas akhir Mata Kuliah Pemrograman Web Berorientasi Objek Lanjutan, tetapi saya ingin mempublishnya disini apabila mungkin ada yang ingin mengembangkan lebih lanjut.
 Aplikasi ini merupakan aplikasi repositori E-Book (pdf) atau Perpustakaan Online Pribadi 'kinda'.
 <br/><br/>
@@ -9,10 +9,10 @@ Dibuat dengan konsep CRUD dan kita dapat membaca buku atau dokumen tersebut di w
 - Template Stisla
 
 ## Usage
-1. git clone repositori di dalam folder htdocs (Jika menggunakan XAMPP)
-2. Buat database "perpus" di phpmyadmin
-3. php artisan migrate
-4. php artisan serve
+1. Clone repo `git clone https://github.com/geniusvale/read-it.git` di dalam folder htdocs (Jika menggunakan XAMPP)
+2. Buat database `perpus` di phpmyadmin
+3. run `php artisan migrate`
+4. run `php artisan serve`
 
 ## Screenshots
 ![read-it homepage](https://user-images.githubusercontent.com/74106164/127100558-d0a5eae9-8de5-44b4-b861-860c61b22f55.png)
