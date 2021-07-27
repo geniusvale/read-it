@@ -9,9 +9,7 @@
 {{-- Bagian Tampil Buku --}}
 
 <div class="row justify-content-center">
-    @foreach ($buku as $buku)
     <iframe src="{{url('pdf/'.$buku->pdf)}}" height="720" width="1280" frameborder=""></iframe>   
-    @endforeach
 </div>
 
 @endsection

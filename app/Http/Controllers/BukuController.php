@@ -12,6 +12,7 @@ class BukuController extends Controller
     {
         $buku = Buku::all();
         return view('buku.index', compact('buku'));
+        // dd($buku);
     }
 
     public function create()
@@ -55,7 +56,7 @@ class BukuController extends Controller
 
     public function show($id)
     {
-        $buku = Buku::all();
+        $buku = Buku::find($id);
         return view('buku.show',compact('buku'));
     
     }
