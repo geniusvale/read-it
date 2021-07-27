@@ -19,6 +19,6 @@ use Illuminate\Support\Facades\Auth;
 
 // Route::get('/', function () {
 //     return view('auth.login');
-// });
+// }); Sudah dihandle Fortify
 
 Route::resource('buku', BukuController::class)->middleware('auth');
