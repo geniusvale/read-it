@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Buku;
 use File;
+use Auth;
 
 class BukuController extends Controller
 {
@@ -49,6 +50,7 @@ class BukuController extends Controller
         $buku->gambar = $path;
         $buku->pdf = $pdf;
         $buku->penerbit = $request->penerbit;
+        $buku->user_id = Auth::user()->id;
         $buku->save();
 
         return redirect()->route('buku.index')->with('Sukses', 'Data berhasil ditambahkan!');
@@ -111,6 +113,7 @@ class BukuController extends Controller
         $buku->tahun = $request->tahun;
         $buku->deskripsi = $request->deskripsi;
         $buku->penerbit = $request->penerbit;
+        $buku->user_id = Auth::user()->id;
         $buku->save();
 
         return redirect()->route('buku.index')->with('Sukses', 'Data berhasil diupdate!');

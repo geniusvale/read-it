@@ -45,10 +45,10 @@
     <div class="main-sidebar sidebar-style-2">
         <aside id="sidebar-wrapper">
             <div class="sidebar-brand">
-                <a href="/">Read-It</a>
+                <a href="#">Read-It</a>
             </div>
             <div class="sidebar-brand sidebar-brand-sm">
-                <a href="/">R-It</a>
+                <a href="#">R-It</a>
             </div>
             <ul class="sidebar-menu">
                 <li class="menu-header">Dashboard</li>
@@ -87,7 +87,8 @@
     </div>
     <footer class="main-footer">
         <div class="footer-left">
-            Copyright &copy; 2018 <div class="bullet"></div> Design By <a href="https://nauval.in/">Muhamad Nauval Azhar</a>
+            Copyright &copy; 2018 
+            {{-- <div class="bullet"></div> Design By <a href="https://nauval.in/">Muhamad Nauval Azhar</a> --}}
         </div>
         <div class="footer-right">
             2.3.0

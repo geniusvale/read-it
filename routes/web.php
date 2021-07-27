@@ -2,6 +2,10 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BukuController;
+use App\Models\User;
+use App\Models\Buku;
+use Illuminate\Support\Facades\Auth;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,8 +17,8 @@ use App\Http\Controllers\BukuController;
 |
 */
 
-Route::get('/', function () {
-    return view('auth.login');
-});
+// Route::get('/', function () {
+//     return view('auth.login');
+// });
 
-Route::resource('buku',BukuController::class);
+Route::resource('buku', BukuController::class)->middleware('auth');

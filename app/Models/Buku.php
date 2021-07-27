@@ -11,4 +11,10 @@ class Buku extends Model
 
     protected $table = 'tbl_buku'; //Menghubungkan ke table di DB
     protected $guarded = []; //Untuk Mass Assignment
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
+    
 }
