@@ -62,7 +62,14 @@
                                     <td>
                                         <div class="badge badge-success">Rp.{{$p->biaya * $p->lamaPinjam}}</div>
                                     </td>
-                                    <td><a href="#" class="btn btn-danger">Delete</a></td>
+                                    <td>
+                                    <form action="{{ route('pinjaman.destroy',$p->id) }}" method="POST">
+                                        <a href="{{route('pinjaman.show', $p->id)}}" class="btn btn-info">Cetak</a>
+                                        @csrf
+                                        @method('DELETE')
+                                        <button type="submit" class="btn btn-danger" onclick="return confirm('Apa anda ingin menghapus data ini?')">Delete</button>
+                                    </form>
+                                    </td>
                                 </tr>
                                     @endif
                                 @endforeach

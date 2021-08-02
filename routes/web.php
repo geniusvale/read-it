@@ -25,3 +25,4 @@ Route::get('/', function () {
 
 Route::resource('buku', BukuController::class)->middleware('auth');
 Route::resource('pinjaman', PinjamanController::class)->middleware('auth');
+

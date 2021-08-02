@@ -51,4 +51,19 @@ class PinjamanController extends Controller
         // $pinjaman = Pinjaman::create($request->all());
 
     }
+
+    public function destroy($id)
+    {
+        $pinjaman = Pinjaman::find($id);
+        $pinjaman->delete();
+
+        return redirect()->route('pinjaman.index');
+    }
+
+    public function show()
+    {
+        // $pinjaman = Pinjaman::find($id);
+        $pinjaman = Pinjaman::all();
+        return view('pinjaman.show', compact('pinjaman'));
+    }
 }
