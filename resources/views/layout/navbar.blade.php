@@ -54,7 +54,7 @@
                 <li class="menu-header">Dashboard</li>
                 <li class="active"><a class="nav-link" href="/buku"><i class="fas fa-fire"></i> <span>Dashboard</span></a></li>
                 
-                <li class="menu-header">Your Library</li>
+                <li class="menu-header">Your Personal Library</li>
                 {{-- <li class="nav-item dropdown">
                     <a href="#" class="nav-link has-dropdown"><i class="fas fa-th-large"></i>
                         <span>Components</span></a>
@@ -63,6 +63,10 @@
                     </ul>
                 </li> --}}
                 <li><a class="nav-link" href="{{route('buku.create')}}"><i class="fas fa-plus"></i> <span>Tambah Buku</span></a></li>
+
+                <li class="menu-header">Perpustakaan Fisik</li>
+                <li><a class="nav-link" href="{{route('pinjaman.index')}}"><i class="fas fa-address-book"></i> <span>Data Pinjaman Buku Fisik Anda</span></a></li>
+                <li><a class="nav-link" href="{{route('pinjaman.create')}}"><i class="fas fa-plus"></i> <span>Ajukan Pinjaman Buku Fisik</span></a></li>
             </ul>
 
             {{-- <div class="m-2 p-3 hide-sidebar-mini">

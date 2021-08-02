@@ -2,8 +2,10 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BukuController;
+use App\Http\Controllers\PinjamanController;
 use App\Models\User;
 use App\Models\Buku;
+use App\Models\Pinjaman;
 use Illuminate\Support\Facades\Auth;
 
 /*
@@ -19,6 +21,8 @@ use Illuminate\Support\Facades\Auth;
 
 // Route::get('/', function () {
 //     return view('auth.login');
-// }); Sudah dihandle Fortify
+// }); 
+// Sudah dihandle Fortify
 
 Route::resource('buku', BukuController::class)->middleware('auth');
+Route::resource('pinjaman', PinjamanController::class)->middleware('auth');
